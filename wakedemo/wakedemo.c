@@ -59,14 +59,14 @@ void main()
   clearScreen(COLOR_BLACK);
 
   //horizontal, vertical
-  drawString11x16(5, 10, "B1 find", color, COLOR_BLUE);
-  drawString11x16(5, 30, "Nemo", color, COLOR_BLUE);
+  drawString11x16(5, 10, "B1", color, COLOR_BLUE);
+  drawString11x16(5, 30, "Orange Fish", color, COLOR_BLUE);
   
-  drawString11x16(5, 55, "B2 find", color, COLOR_BLUE);
-  drawString11x16(5, 75, "Dory", color, COLOR_BLUE);
+  drawString11x16(5, 55, "B2", color, COLOR_BLUE);
+  drawString11x16(5, 75, "Blue fish", color, COLOR_BLUE);
 
   
-  drawString11x16(5, 100, "B3 shape", color, COLOR_BLUE);
+  drawString11x16(5, 100, "B3 Diamond", color, COLOR_BLUE);
   drawString5x7(20, 150, "B4 end", color, COLOR_BLUE);
   while(1){
      state_advance();
