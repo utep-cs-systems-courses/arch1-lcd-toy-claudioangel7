@@ -36,3 +36,4 @@ case1:
 end:
 	mov.b #1, r13		;return 1
 	pop r0			;you go to next instruction that is next
+	
