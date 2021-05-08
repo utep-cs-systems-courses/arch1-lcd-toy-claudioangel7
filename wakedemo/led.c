@@ -3,6 +3,7 @@
 #include "switches.h"
 #include "stateMachine.h"
 
+
 unsigned char red_on = 0; //red light off
 unsigned char green_on = 0; // green light off
 
