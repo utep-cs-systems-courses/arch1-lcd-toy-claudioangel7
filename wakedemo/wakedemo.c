@@ -18,12 +18,7 @@ void wdt_c_handler()
   static int secCount = 0;
 
   secCount++;
-  /*
-  if(++secCount == 250){
-    secCount = 0;
-    color = (color == COLOR_GREEN) ? COLOR_PINK : COLOR_GREEN;
-    //redrawScreen = 1;
-    }*/
+
   if (++secCount == 62 & switch_state_down == 0){ // called every 1/4 of a sec
     redrawScreen = 1;
     secCount = 0;
@@ -52,7 +47,7 @@ void main()
   lcd_init();
   init_buzzer();
   switch_init(15);
-  // toggle_green();
+  //toggle_green();
 
   enableWDTInterrupts();
   or_sr(0x8);
@@ -68,6 +63,7 @@ void main()
   
   drawString11x16(5, 100, "B3 Diamond", color, COLOR_BLUE);
   drawString5x7(20, 150, "B4 end", color, COLOR_BLUE);
+  
   while(1){
      state_advance();
   }
