@@ -150,7 +150,6 @@ char toggle_green_led() //will dim the light to 50%
    return 2;
 }
 
-
 char dim25()
 { //dim light to 25 %
   if(times < 70){ // will keep reapeting until 70
